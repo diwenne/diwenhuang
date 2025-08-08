@@ -185,6 +185,7 @@ body {
   overflow: hidden;
   /* 👇 Adds a subtle border, which looks nice with logos */
   border: 1px solid #eee;
+  flex-shrink: 0; 
 }
 
 /* This new rule styles the <img> tag itself */
