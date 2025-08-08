@@ -1,7 +1,6 @@
 import { Link } from 'react-router-dom';
 import ProfilePic from '../assets/me.jpg';
 import ResumePDF from '../assets/resume.pdf';
-// 👇 1. Import the icons you need
 import { SiGithub, SiLinkedin} from 'react-icons/si';
 import { FiMail } from 'react-icons/fi';
 
@@ -12,7 +11,7 @@ function Home() {
       <h1>Diwen Huang</h1>
       <p className="subheader">ib @ port moody secondary</p>
       <p className="description">
-        athlete, full-stack developer and an author now i guess ✨
+        athlete, full-stack developer and an author now i guess ✨🏸
       </p>
       <div className="nav-buttons">
         <Link to="/work" className="btn">

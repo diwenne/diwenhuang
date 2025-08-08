@@ -12,7 +12,6 @@
 
 body {
   margin: 0;
-  /* --- ✨ AESTHETIC TOUCH: Apply the new 'Lexend' font --- */
   font-family: 'Lexend', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto',
     sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -21,7 +20,7 @@ body {
   color: var(--font-color);
 }
 
-/* --- ✅ CORRECTED: Full Home Page Styles --- */
+/* --- Home Page Styles --- */
 .home-container {
   display: flex;
   flex-direction: column;
@@ -52,10 +51,16 @@ body {
   margin: 0;
 }
 
+.subheader {
+  font-size: 1rem;
+  font-weight: 400;
+  color: #666;
+  margin: 0;
+}
+
 .home-container .description {
   font-size: 1.1rem;
   color: #555;
-  max-width: 600px;
 }
 
 .nav-buttons {
@@ -80,6 +85,23 @@ body {
   box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
 }
 
+/* --- Social Icons --- */
+.social-icons {
+  display: flex;
+  gap: 1.5rem;
+  margin-top: 1rem;
+}
+
+.social-icons a {
+  color: #555;
+  font-size: 1.5rem;
+  transition: all 0.2s ease-in-out;
+}
+
+.social-icons a:hover {
+  color: var(--font-color);
+  transform: translateY(-3px);
+}
 
 /* --- Work & Projects Pages --- */
 .page-container {
@@ -152,14 +174,25 @@ body {
 }
 
 .item-icon {
-  font-size: 1.5rem;
-  background-color: #f0f0f0;
+  background-color: #fff; /* A neutral background for logos */
   width: 40px;
   height: 40px;
   display: flex;
   align-items: center;
   justify-content: center;
   border-radius: var(--border-radius);
+  /* 👇 Ensures the image inside is also rounded */
+  overflow: hidden;
+  /* 👇 Adds a subtle border, which looks nice with logos */
+  border: 1px solid #eee;
+}
+
+/* This new rule styles the <img> tag itself */
+.item-icon img {
+  width: 100%;
+  height: 100%;
+  /* Use 'cover' to fill the space, or 'contain' to show the whole logo */
+  object-fit: cover;
 }
 
 .item-title-group {
@@ -204,27 +237,51 @@ body {
   color: #000;
 }
 
-/* --- Social Icons --- */
-.social-icons {
+/* --- Styles for Refactored Project Item --- */
+.item-title-group h3 a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.item-title-group h3 a:hover {
+  text-decoration: underline;
+}
+
+.expandable-subtitle {
+  cursor: pointer;
+  transition: color 0.2s ease;
+}
+
+.expandable-subtitle:hover {
+  color: #000;
+}
+
+/* This arrow was added to ProjectItem and needs styles */
+.item-toggle {
+  font-size: 1.5rem;
+  color: #aaa;
+  transition: transform 0.3s ease;
+}
+
+.item-toggle.expanded {
+  transform: rotate(90deg);
+}
+
+/* --- ✅ FIX: Styles for the Skill Tags --- */
+.item-tags {
   display: flex;
-  gap: 1.5rem; /* Space between icons */
-  margin-top: 1rem; /* Space above the icon row */
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  padding-left: 64px;
+  margin-top: 0.75rem;
+  margin-bottom: 0.75rem; /* ✅ FIX: Balances the margin-top for even spacing */
 }
 
-.social-icons a {
-  color: #555; /* Icon color */
-  font-size: 1.5rem; /* Icon size */
-  transition: all 0.2s ease-in-out;
-}
-
-.social-icons a:hover {
-  color: var(--font-color); /* Darken icon on hover */
-  transform: translateY(-3px); /* Make icon lift up on hover */
-}
-
-.subheader {
-  font-size: 1rem;
-  font-weight: 400;
-  color: #666;
-  margin: 0;
+.tag {
+  background-color: #eee;
+  color: #555;
+  padding: 4px 10px;
+  border-radius: 8px;
+  font-size: 0.8rem;
+  font-weight: 500;
 }

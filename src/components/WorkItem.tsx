@@ -3,30 +3,49 @@ import { useState } from 'react';
 interface WorkItemProps {
   icon: string;
   title: string;
-  company: string;
-  date: string; // <-- Add date to the interface
+  subtitle: string;
+  date: string;
   description: string;
+  tags: string[];
 }
 
-function WorkItem({ icon, title, company, date, description }: WorkItemProps) {
+function WorkItem({ icon, title, subtitle, date, description, tags }: WorkItemProps) {
   const [isExpanded, setIsExpanded] = useState(false);
 
+  // ✅ FIX: Add logic to handle both images and emojis
+  const isImagePath = icon.includes('/') || icon.includes('.');
+
   return (
-    // This wrapper holds the item and its expandable description
     <div className="list-item-wrapper">
       <div className="list-item" onClick={() => setIsExpanded(!isExpanded)}>
-        {/* This group contains the icon, title, and company */}
         <div className="item-details">
-          <span className="item-icon">{icon}</span>
+          <div className="item-icon">
+            {isImagePath ? (
+              <img src={icon} alt={`${title} logo`} />
+            ) : (
+              <span>{icon}</span>
+            )}
+          </div>
           <div className="item-title-group">
             <h3>{title}</h3>
-            <p>{company}</p>
+            <p>{subtitle}</p>
           </div>
         </div>
-        {/* The date is now a separate element for easy positioning */}
         <span className="item-date">{date}</span>
       </div>
-      {isExpanded && <p className="item-content">{description}</p>}
+
+      {isExpanded && (
+        <>
+          <p className="item-content">{description}</p>
+          <div className="item-tags">
+            {tags.map((tag) => (
+              <span key={tag} className="tag">
+                {tag}
+              </span>
+            ))}
+          </div>
+        </>
+      )}
     </div>
   );
 }
