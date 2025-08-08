@@ -43,14 +43,14 @@ const projectData = [
   //   description: 'A Discord bot that detects and deletes profanity using custom logic and a custom-trained AI model. It won 3rd place in a Vancouver hackathon.',
   //   tags: ['Machine Learning', 'Discord API', 'Python']
   // },
-  // {
-  //   icon: '🍲',
-  //   title: 'Regen',
-  //   subtitle: 'AI-powered website that generates recipes from food photos.',
-  //   link: '#', // Replace with your link
-  //   description: 'A website that takes in photos of food items and uses the Gemini API to generate a custom-tailored recipe. It won 2nd place in a Vancouver hackathon.',
-  //   tags: ['React', 'Gemini API']
-  // }
+  {
+    icon: '🍲',
+    title: 'Regen',
+    subtitle: 'AI-powered website that generates recipes from food photos.',
+    link: 'https://github.com/seanhuangcode/ReGen', 
+    description: 'A website that takes in photos of food items and uses the Gemini API to generate a custom-tailored recipe. It won 2nd place in a Vancouver hackathon.',
+    tags: ['HTML', 'CSS', 'Gemini API']
+  }
 ];
 
 function Projects() {
