@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom';
 import ProfilePic from '../assets/me.jpg';
 import ResumePDF from '../assets/resume.pdf';
 // 👇 1. Import the icons you need
-import { SiGithub, SiLinkedin, SiInstagram } from 'react-icons/si';
+import { SiGithub, SiLinkedin} from 'react-icons/si';
 import { FiMail } from 'react-icons/fi';
 
 function Home() {
