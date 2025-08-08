@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
 import ProfilePic from '../assets/me.jpg';
-import ResumePDF from '../assets/resume.pdf';
+// import ResumePDF from '../assets/resume.pdf';
 import { SiGithub, SiLinkedin} from 'react-icons/si';
 import { FiMail } from 'react-icons/fi';
 
@@ -20,9 +20,9 @@ function Home() {
         <Link to="/projects" className="btn">
           projects
         </Link>
-        <a href={ResumePDF} target="_blank" rel="noopener noreferrer" className="btn">
+        {/* <a href={ResumePDF} target="_blank" rel="noopener noreferrer" className="btn">
           resume
-        </a>
+        </a> */}
       </div>
 
       {/* 👇 2. Add the social icons container */}
