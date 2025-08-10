@@ -50,6 +50,14 @@ const projectData = [
     link: 'https://github.com/seanhuangcode/ReGen', 
     description: 'A website that takes in photos of food items and uses the Gemini API to generate a custom-tailored recipe. It won 2nd place in a Vancouver hackathon.',
     tags: ['HTML', 'CSS', 'Gemini API']
+  },
+  {
+    icon: '🏛️',
+    title: 'Chinese Canadian Immigration Museum',
+    subtitle: 'Designing a website for a virtual museum using UX frameworks.',
+    link: '/projects/ccim', // Internal link to the case study page
+    description: 'A case study in UX design for a virtual museum, focusing on user-centered design principles, information architecture, and prototyping.',
+    tags: ['UX Design', 'Figma', 'Product Design', 'Prototyping']
   }
 ];
 
