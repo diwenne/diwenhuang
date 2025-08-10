@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { Link } from 'react-router-dom'; // 1. Import the Link component
 
 interface ProjectItemProps {
   icon: string;
@@ -12,14 +13,15 @@ interface ProjectItemProps {
 function ProjectItem({ icon, title, subtitle, link, description, tags }: ProjectItemProps) {
   const [isExpanded, setIsExpanded] = useState(false);
 
-  // ✅ Add this logic to check if the icon is a file path or an emoji
   const isImagePath = icon.includes('/') || icon.includes('.');
+  
+  // 2. Check if the link is internal (starts with '/') or external
+  const isInternalLink = link.startsWith('/');
 
   return (
     <div className="list-item-wrapper">
       <div className="list-item">
         <div className="item-details">
-          {/* This now handles both images and emojis */}
           <div className="item-icon">
             {isImagePath ? (
               <img src={icon} alt={`${title} logo`} />
@@ -29,9 +31,14 @@ function ProjectItem({ icon, title, subtitle, link, description, tags }: Project
           </div>
           <div className="item-title-group">
             <h3>
-              <a href={link} target="_blank" rel="noopener noreferrer">
-                {title}
-              </a>
+              {/* 3. Render a <Link> or an <a> tag based on the check */}
+              {isInternalLink ? (
+                <Link to={link}>{title}</Link>
+              ) : (
+                <a href={link} target="_blank" rel="noopener noreferrer">
+                  {title}
+                </a>
+              )}
             </h3>
             <p className="expandable-subtitle" onClick={() => setIsExpanded(!isExpanded)}>
               {subtitle}
