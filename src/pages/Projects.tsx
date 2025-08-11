@@ -8,24 +8,24 @@ const projectData = [
     title: 'Smashspeed iOS',
     subtitle: 'User-friendly app to calculate badminton smash speed.',
     link: 'https://smashspeed.ca',
-    description: 'A user-friendly app for iOS and macOS that uses a machine learning model to accurately calculate the speed of a badminton smash.',
-    tags: ['SwiftUI', 'CoreML']
+    description: 'Developed and launched a native iOS application that provides badminton players with a powerful tool to measure their smash speed. Built with SwiftUI for a clean and responsive interface, the app leverages a custom CoreML model for on-device analysis. Users can import videos of their smashes, and the app automatically processes the footage to provide an accurate speed reading. Trusted by amateur and national-level players alike, Smashspeed serves as a valuable training aid for athletes looking to track their performance and improvement.',
+    tags: ['SwiftUI', 'CoreML', 'iOS', 'Product Development']
   },
   {
     icon: SmashSpeedLogo,
     title: 'Smashspeed (ML Engine)',
     subtitle: 'Custom ML model to detect shuttlecocks and calculate speed.',
     link: 'https://github.com/diwenne/smashspeed_ios',
-    description: 'Collected over 3000 images to train a custom YOLOv5 machine learning model. Implemented logic using Kalman Filters for detection and speed calculation.',
+    description: 'Engineered the core machine learning pipeline for the Smashspeed app, beginning with the collection and annotation of a custom dataset of over 3,000 shuttlecock images. I trained a lightweight YOLOv5 model for real-time object detection and implemented a Kalman Filter to accurately track the shuttlecock\'s trajectory, even with high-speed motion blur. This robust tracking logic allows for precise speed calculation based on the object\'s displacement between frames, forming the powerful yet efficient engine that drives the iOS application.',
     tags: ['Python', 'PyTorch', 'YOLOv5', 'Kalman Filters', 'Machine Learning']
   },
   {
     icon: '📖',
     title: 'Python Faststart',
     subtitle: 'A textbook teaching how to learn coding in the age of AI.',
-    link: '#', // Replace with your link
-    description: 'A Python textbook and concept that teaches with AI’s presence in mind, focusing on how to learn coding effectively in the modern age of AI.',
-    tags: ['Python', 'Authoring', 'Design', 'Publishing']
+    link: 'https://a.co/d/fUiIyf5',
+    description: 'Authored and published "Python Faststart," a textbook designed to modernize the way beginners learn to code. The book emphasizes a hands-on, project-based approach, teaching fundamental Python concepts with the assumption that AI tools are available to supplement learning. It focuses on developing problem-solving skills and understanding how to effectively leverage AI, moving beyond simple syntax memorization to prepare new programmers for the modern development landscape.',
+    tags: ['Python', 'Authoring', 'Design', 'Publishing', 'AI in Education']
   },
   // {
   //   icon: '🤪',
