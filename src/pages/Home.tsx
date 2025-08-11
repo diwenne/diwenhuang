@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom';
 import ProfilePic from '../assets/me.jpg';
 // import ResumePDF from '../assets/resume.pdf';
-import { SiGithub, SiLinkedin} from 'react-icons/si';
+import { SiGithub, SiLinkedin, SiInstagram } from 'react-icons/si';
 import { FiMail } from 'react-icons/fi';
 
 function Home() {
@@ -25,10 +25,9 @@ function Home() {
         </a> */}
       </div>
 
-      {/* 👇 2. Add the social icons container */}
       <div className="social-icons">
         <a
-          href="https://github.com/diwenne" // <-- Replace with your GitHub URL
+          href="https://github.com/diwenne"
           target="_blank"
           rel="noopener noreferrer"
           aria-label="GitHub"
@@ -36,14 +35,22 @@ function Home() {
           <SiGithub />
         </a>
         <a
-          href="https://linkedin.com/in/diwenh5" // <-- Replace with your LinkedIn URL
+          href="https://linkedin.com/in/diwenh5"
           target="_blank"
           rel="noopener noreferrer"
           aria-label="LinkedIn"
         >
           <SiLinkedin />
         </a>
-        <a href="mailto:diwenh5@icloud.com" aria-label="Email"> {/* <-- Replace with your email */}
+        <a 
+          href="https://instagram.com/devdiwen" 
+          target="_blank" 
+          rel="noopener noreferrer" 
+          aria-label="Instagram"
+        >
+          <SiInstagram />
+        </a>
+        <a href="mailto:diwenh5@icloud.com" aria-label="Email">
           <FiMail />
         </a>
       </div>
