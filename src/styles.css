@@ -440,3 +440,10 @@ body {
 .source-code-link:hover {
   text-decoration: underline;
 }
+
+@media (max-width: 600px) {
+  .overview-grid {
+    /* Stacks the grid items into a single column on screens smaller than 600px */
+    grid-template-columns: 1fr;
+  }
+}
