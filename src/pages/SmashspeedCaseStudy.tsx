@@ -1,4 +1,3 @@
-import React from 'react';
 import Breadcrumbs from '../components/Breadcrumbs';
 import { FaGithub } from 'react-icons/fa';
 
