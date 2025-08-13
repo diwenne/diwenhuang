@@ -15,7 +15,7 @@ const projectData = [
     icon: SmashSpeedLogo,
     title: 'Smashspeed (ML Engine)',
     subtitle: 'Custom ML model to detect shuttlecocks and calculate speed.',
-    link: 'https://github.com/diwenne/smashspeed_ios',
+    link: '/projects/smashspeed-engine',
     description: 'Engineered the core machine learning pipeline for the Smashspeed app, beginning with the collection and annotation of a custom dataset of over 3,000 shuttlecock images. I trained a lightweight YOLOv5 model for real-time object detection and implemented a Kalman Filter to accurately track the shuttlecock\'s trajectory, even with high-speed motion blur. This robust tracking logic allows for precise speed calculation based on the object\'s displacement between frames, forming the powerful yet efficient engine that drives the iOS application.',
     tags: ['Python', 'PyTorch', 'YOLOv5', 'Kalman Filters', 'Machine Learning']
   },

@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Link } from 'react-router-dom'; // 1. Import the Link component
+import { Link } from 'react-router-dom';
 
 interface ProjectItemProps {
   icon: string;
@@ -15,7 +15,6 @@ function ProjectItem({ icon, title, subtitle, link, description, tags }: Project
 
   const isImagePath = icon.includes('/') || icon.includes('.');
   
-  // 2. Check if the link is internal (starts with '/') or external
   const isInternalLink = link.startsWith('/');
 
   return (
@@ -31,7 +30,6 @@ function ProjectItem({ icon, title, subtitle, link, description, tags }: Project
           </div>
           <div className="item-title-group">
             <h3>
-              {/* 3. Render a <Link> or an <a> tag based on the check */}
               {isInternalLink ? (
                 <Link to={link}>{title}</Link>
               ) : (

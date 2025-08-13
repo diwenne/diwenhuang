@@ -429,3 +429,14 @@ body {
   filter: grayscale(0%);
   opacity: 1;
 }
+
+.source-code-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  text-decoration: none;
+  color: inherit;
+}
+.source-code-link:hover {
+  text-decoration: underline;
+}

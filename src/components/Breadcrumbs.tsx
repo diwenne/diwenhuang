@@ -6,36 +6,32 @@ interface BreadcrumbsProps {
 }
 
 function Breadcrumbs({ pageName }: BreadcrumbsProps) {
-  // Split the pageName string by '/' to handle nested paths
   const pathSegments = pageName.split('/');
-
-  let currentPath = ''; // To build the link URL incrementally
+  let currentPath = '';
 
   return (
-    <div className="breadcrumbs">
-      <Link to="/">home</Link>
-      
-      {/* Map over each part of the path */}
-      {pathSegments.map((segment, index) => {
-        // Add the current segment to the path for the link's URL
-        currentPath += `/${segment}`;
+    // MODIFIED: This component now uses a wrapper to center itself.
+    <div style={{ display: 'flex', justifyContent: 'center' }}>
+      <div className="breadcrumbs">
+        <Link to="/">home</Link>
         
-        // Check if this is the last item in the breadcrumb trail
-        const isLast = index === pathSegments.length - 1;
+        {pathSegments.map((segment, index) => {
+          const cleanSegment = segment.trim();
+          currentPath += `/${cleanSegment}`;
+          const isLast = index === pathSegments.length - 1;
 
-        return (
-          <React.Fragment key={segment}>
-            <span> / </span>
-            {isLast ? (
-              // If it's the last one, render it as plain text
-              <span>{segment}</span>
-            ) : (
-              // Otherwise, render it as a link
-              <Link to={currentPath}>{segment}</Link>
-            )}
-          </React.Fragment>
-        );
-      })}
+          return (
+            <React.Fragment key={cleanSegment}>
+              <span> / </span>
+              {isLast ? (
+                <span>{cleanSegment}</span>
+              ) : (
+                <Link to={currentPath}>{cleanSegment}</Link>
+              )}
+            </React.Fragment>
+          );
+        })}
+      </div>
     </div>
   );
 }
