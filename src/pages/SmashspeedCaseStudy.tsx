@@ -75,7 +75,7 @@ const SmashspeedCaseStudy = () => {
           </p>
 
           <p>
-            The Stanford program covered essential machine learning skills: coding neural networks from scratch, performing backpropagation calculus by hand, hyperparameter tuning, regularization, and optimization techniques. I explored architectures including CNNs, RNNs, attention mechanisms, transformers, and sequence models, while also learning how to structure and manage large ML projects effectively.
+            The Stanford program covered essential machine learning skills: coding convolutional neural networks from scratch, performing backpropagation calculus by hand, hyperparameter tuning, regularization, and optimization techniques. I explored architectures including CNNs, RNNs, attention mechanisms, transformers, and sequence models, while also learning how to structure and manage large ML projects effectively.
           </p>
 
           <p>
