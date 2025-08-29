@@ -1,18 +1,6 @@
-import React from 'react';
 import PythonCover from '../assets/pythonfaststart.png';
 import SwiftCover from '../assets/swiftfaststart.png';
-
-const Breadcrumbs = ({ pageName }) => {
-  return (
-    <nav className="breadcrumbs">
-      <a href="/">home</a>
-      <span>/</span>
-      <a href="/projects">projects</a>
-      <span>/</span>
-      {pageName}
-    </nav>
-  );
-};
+import Breadcrumbs from '../components/Breadcrumbs'
 
 const FaststartSeriesCaseStudy = () => {
   return (
