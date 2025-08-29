@@ -10,30 +10,31 @@ function Breadcrumbs({ pageName }: BreadcrumbsProps) {
   let currentPath = '';
 
   return (
-    // MODIFIED: This component now uses a wrapper to center itself.
-    <div style={{ display: 'flex', justifyContent: 'center' }}>
-      <div className="breadcrumbs">
-        <Link to="/">home</Link>
-        
-        {pathSegments.map((segment, index) => {
-          const cleanSegment = segment.trim();
-          currentPath += `/${cleanSegment}`;
-          const isLast = index === pathSegments.length - 1;
+    <div className="breadcrumbs">
+      <Link to="/">home</Link>
+      
+      {pathSegments.map((segment, index) => {
+        const cleanSegment = segment.trim();
+        // Return null if segment is empty to avoid extra slashes
+        if (!cleanSegment) return null;
+        currentPath += `/${cleanSegment}`;
+        const isLast = index === pathSegments.length - 1;
 
-          return (
-            <React.Fragment key={cleanSegment}>
-              <span> / </span>
-              {isLast ? (
-                <span>{cleanSegment}</span>
-              ) : (
-                <Link to={currentPath}>{cleanSegment}</Link>
-              )}
-            </React.Fragment>
-          );
-        })}
-      </div>
+        return (
+          <React.Fragment key={cleanSegment}>
+            {/* Added a 'separator' class to this span */}
+            <span className="separator"> / </span>
+            {isLast ? (
+              <span>{cleanSegment}</span>
+            ) : (
+              <Link to={currentPath}>{cleanSegment}</Link>
+            )}
+          </React.Fragment>
+        );
+      })}
     </div>
   );
 }
 
 export default Breadcrumbs;
+

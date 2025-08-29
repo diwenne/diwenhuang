@@ -141,7 +141,7 @@ body {
   color: var(--font-color);
 }
 
-.breadcrumbs span {
+.breadcrumbs .separator {
   margin: 0 0.5rem;
 }
 
