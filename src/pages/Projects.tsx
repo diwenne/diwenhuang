@@ -20,7 +20,7 @@ const projectData = [
     title: 'Personal Website',
     subtitle: 'My personal portfolio built with React and TypeScript.',
     link: 'https://diwenhuang.ca',
-    date: '2025 – Present',
+    date: 'August 2025',
     description: 'The website you\'re currently on! I developed this portfolio from scratch with a focus on a simple, aesthetic, and intuitive user experience. It was built using React with Vite for a fast and modern development experience, TypeScript for type safety, and plain CSS for precise control over the design and animations.',
     tags: ['React', 'TypeScript', 'CSS', 'Vite']
   },
