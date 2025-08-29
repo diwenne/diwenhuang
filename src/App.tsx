@@ -4,6 +4,7 @@ import Work from './pages/Work';
 import Projects from './pages/Projects';
 import CcimCaseStudy from './pages/CcimCaseStudy';
 import SmashSpeedCaseStudy from './pages/SmashspeedCaseStudy';
+import FaststartSeriesCaseStudy from './pages/FaststartSeriesCaseStudy.tsx'; // Import the new case study
 import { Analytics } from '@vercel/analytics/react';
 
 function App() {
@@ -15,6 +16,8 @@ function App() {
         <Route path="/projects" element={<Projects />} />
         <Route path="/projects/ccim" element={<CcimCaseStudy />} />
         <Route path="/projects/smashspeed-engine" element={<SmashSpeedCaseStudy />} />
+        {/* Add the new route for the Faststart Series case study */}
+        <Route path="/projects/faststart-series" element={<FaststartSeriesCaseStudy />} />
       </Routes>
       <Analytics />
     </>

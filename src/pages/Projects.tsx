@@ -1,6 +1,76 @@
-import ProjectItem from '../components/ProjectItem';
-import Breadcrumbs from '../components/Breadcrumbs';
+import React, { useState } from 'react';
 import SmashSpeedLogo from '../assets/smashspeed.png';
+
+// --- Helper Components ---
+
+const Breadcrumbs = ({ pageName, path }) => {
+  return (
+    <nav className="breadcrumbs">
+      <a href="/">home</a>
+      {path && <span>/</span>}
+      {path && <a href={`/${path}`}>{path}</a>}
+      <span>/</span>
+      {pageName}
+    </nav>
+  );
+};
+
+const ProjectItem = ({ icon, title, subtitle, link, description, tags }) => {
+    const [isExpanded, setIsExpanded] = useState(false);
+    const isInternalLink = link.startsWith('/');
+
+    const TitleComponent = isInternalLink ? 'a' : 'a';
+
+    const handleSubtitleClick = (e) => {
+        e.preventDefault();
+        setIsExpanded(!isExpanded);
+    };
+
+    return (
+        <div className="list-item-wrapper">
+            <div className="list-item">
+                <div className="item-details">
+                    <div className="item-icon">
+                        {typeof icon === 'string' && !icon.endsWith('.png') ? (
+                           <span style={{fontSize: '24px'}}>{icon}</span>
+                        ) : (
+                             <img src={icon} alt={`${title} logo`} />
+                        )}
+                    </div>
+                    <div className="item-title-group">
+                        <h3>
+                            <TitleComponent href={link} target={isInternalLink ? '_self' : '_blank'} rel="noopener noreferrer">
+                                {title}
+                            </TitleComponent>
+                        </h3>
+                        <p className="expandable-subtitle" onClick={handleSubtitleClick}>
+                          {subtitle}
+                        </p>
+                    </div>
+                </div>
+                 <span
+                    className={`item-toggle ${isExpanded ? 'expanded' : ''}`}
+                    onClick={handleSubtitleClick}
+                >
+                    ›
+                </span>
+            </div>
+            {isExpanded && (
+                <>
+                    <p className="item-content">{description}</p>
+                    <div className="item-tags">
+                        {tags.map((tag, index) => (
+                            <span key={index} className="tag">{tag}</span>
+                        ))}
+                    </div>
+                </>
+            )}
+        </div>
+    );
+};
+
+
+// --- Main Page Data & Component ---
 
 const projectData = [
   {
@@ -21,33 +91,17 @@ const projectData = [
   },
   {
     icon: '📖',
-    title: 'Python Faststart',
-    subtitle: 'A textbook teaching how to learn coding in the age of AI.',
-    link: 'https://a.co/d/fUiIyf5',
-    description: 'Authored and published "Python Faststart," a textbook designed to modernize the way beginners learn to code. The book emphasizes a hands-on, project-based approach, teaching fundamental Python concepts with the assumption that AI tools are available to supplement learning. It focuses on developing problem-solving skills and understanding how to effectively leverage AI, moving beyond simple syntax memorization to prepare new programmers for the modern development landscape.',
-    tags: ['Python', 'Authoring', 'Design', 'Publishing', 'AI in Education']
+    title: 'Programming Faststart Series',
+    subtitle: 'Textbooks teaching coding in the age of AI.',
+    link: '/projects/faststart-series',
+    description: 'Authored and self-published a series of textbooks designed to modernize the way beginners learn to code. The books, starting with Python and Swift, emphasize a hands-on, project-based approach, teaching fundamental concepts with the assumption that AI tools are available to supplement learning. The series focuses on developing problem-solving skills and preparing new programmers for the modern development landscape.',
+    tags: ['Python', 'Swift', 'Authoring', 'Design', 'Publishing', 'AI in Education']
   },
-  // {
-  //   icon: '🤪',
-  //   title: 'Nonotes',
-  //   subtitle: 'Unconventional, comically useless note-taking software.',
-  //   link: '#', // Replace with your link
-  //   description: 'An unconventional note-taking software designed to be comically useless. It won 4th place in a Vancouver hackathon.',
-  //   tags: ['React', 'JavaScript', 'Tailwind CSS']
-  // },
-  // {
-  //   icon: '🤖',
-  //   title: 'Profanity Police',
-  //   subtitle: 'Discord bot to detect and delete profanity using a custom AI.',
-  //   link: '#', // Replace with your link
-  //   description: 'A Discord bot that detects and deletes profanity using custom logic and a custom-trained AI model. It won 3rd place in a Vancouver hackathon.',
-  //   tags: ['Machine Learning', 'Discord API', 'Python']
-  // },
   {
     icon: '🍲',
     title: 'Regen',
     subtitle: 'AI-powered website that generates recipes from food photos.',
-    link: 'https://github.com/seanhuangcode/ReGen', 
+    link: 'https://github.com/seanhuangcode/ReGen',
     description: 'A website that takes in photos of food items and uses the Gemini API to generate a custom-tailored recipe. It won 2nd place in a Vancouver hackathon.',
     tags: ['HTML', 'CSS', 'Gemini API']
   },
@@ -55,7 +109,7 @@ const projectData = [
     icon: '🏛️',
     title: 'Chinese Canadian Immigration Museum',
     subtitle: 'Designing a website for a virtual museum using UX frameworks.',
-    link: '/projects/ccim', // Internal link to the case study page
+    link: '/projects/ccim',
     description: 'A case study in UX design for a virtual museum, focusing on user-centered design principles, information architecture, and prototyping.',
     tags: ['UX Design', 'Figma', 'Product Design', 'Prototyping']
   }
@@ -84,3 +138,4 @@ function Projects() {
 }
 
 export default Projects;
+
