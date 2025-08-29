@@ -6,20 +6,34 @@ interface ProjectItemProps {
   title: string;
   subtitle: string;
   link: string;
+  date: string;
   description: string;
   tags: string[];
 }
 
-function ProjectItem({ icon, title, subtitle, link, description, tags }: ProjectItemProps) {
+function ProjectItem({
+  icon,
+  title,
+  subtitle,
+  link,
+  date,
+  description,
+  tags,
+}: ProjectItemProps) {
   const [isExpanded, setIsExpanded] = useState(false);
 
   const isImagePath = icon.includes('/') || icon.includes('.');
-  
+
   const isInternalLink = link.startsWith('/');
+
+  // Stop propagation on link clicks to prevent expansion when navigating
+  const handleLinkClick = (e: React.MouseEvent) => {
+    e.stopPropagation();
+  };
 
   return (
     <div className="list-item-wrapper">
-      <div className="list-item">
+      <div className="list-item" onClick={() => setIsExpanded(!isExpanded)}>
         <div className="item-details">
           <div className="item-icon">
             {isImagePath ? (
@@ -29,7 +43,7 @@ function ProjectItem({ icon, title, subtitle, link, description, tags }: Project
             )}
           </div>
           <div className="item-title-group">
-            <h3>
+            <h3 onClick={handleLinkClick}>
               {isInternalLink ? (
                 <Link to={link}>{title}</Link>
               ) : (
@@ -38,19 +52,11 @@ function ProjectItem({ icon, title, subtitle, link, description, tags }: Project
                 </a>
               )}
             </h3>
-            <p className="expandable-subtitle" onClick={() => setIsExpanded(!isExpanded)}>
-              {subtitle}
-            </p>
+            <p>{subtitle}</p>
           </div>
         </div>
-        
-        <span
-          className={`item-toggle ${isExpanded ? 'expanded' : ''}`}
-          onClick={() => setIsExpanded(!isExpanded)}
-        >
-          ›
-        </span>
 
+        <span className="item-date">{date}</span>
       </div>
 
       {isExpanded && (

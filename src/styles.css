@@ -112,8 +112,14 @@ body {
 }
 
 @keyframes fadeIn {
-  from { opacity: 0; transform: translateY(10px); }
-  to { opacity: 1; transform: translateY(0); }
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 .page-container h1 {
@@ -185,7 +191,7 @@ body {
   overflow: hidden;
   /* 👇 Adds a subtle border, which looks nice with logos */
   border: 1px solid #eee;
-  flex-shrink: 0; 
+  flex-shrink: 0;
 }
 
 /* This new rule styles the <img> tag itself */
@@ -230,8 +236,14 @@ body {
 }
 
 @keyframes slideDown {
-  from { opacity: 0; transform: translateY(-10px); }
-  to { opacity: 1; transform: translateY(0); }
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 .list-item:hover .item-title-group h3 {
@@ -292,7 +304,7 @@ body {
 .case-study {
   max-width: 800px;
   margin: 0 auto;
-  margin-top: 5rem; 
+  margin-top: 5rem;
 }
 
 .case-study header {
@@ -329,7 +341,8 @@ body {
   font-size: 1.4rem;
 }
 
-.case-study ul, .case-study ol {
+.case-study ul,
+.case-study ol {
   padding-left: 20px;
   line-height: 1.6;
 }
@@ -376,14 +389,14 @@ body {
 
 /* Style for single images */
 .case-study-image {
-    width: 100%;
-    height: auto;
-    max-height: 550px;
-    /* Change 'cover' to 'contain' to prevent cropping */
-    object-fit: contain; 
-    border-radius: 8px;
-    margin-top: 1rem;
-    /* Removed border and background for a cleaner look with 'contain' */
+  width: 100%;
+  height: auto;
+  max-height: 550px;
+  /* Change 'cover' to 'contain' to prevent cropping */
+  object-fit: contain;
+  border-radius: 8px;
+  margin-top: 1rem;
+  /* Removed border and background for a cleaner look with 'contain' */
 }
 
 /* Gallery for multiple images */
