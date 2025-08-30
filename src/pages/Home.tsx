@@ -9,7 +9,7 @@ function Home() {
     <>
       <div className="bg-canvas">
         <Ballpit
-          count={80}
+          count={60}
           gravity={0.05}
           friction={0.9999}
           wallBounce={1}
