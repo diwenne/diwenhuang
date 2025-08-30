@@ -460,3 +460,11 @@ body {
     grid-template-columns: 1fr;
   }
 }
+
+/* ballpit */
+.bg-canvas {
+  position: fixed; /* or absolute within a section */
+  inset: 0;
+  z-index: -1;
+  pointer-events: none; /* never block clicks */
+}
