@@ -471,3 +471,64 @@ body {
   z-index: -1; /* This is the key change */
   pointer-events: none;
 }
+
+/* --- Updated Toggle Button Styles --- */
+.toggle-balls-btn {
+  /* Positioning: Centered at the bottom */
+  position: fixed;
+  bottom: 30px; /* A little space from the bottom edge */
+  left: 50%;
+  transform: translateX(-50%); /* This is key for true centering */
+  z-index: 1000;
+
+  /* Appearance: No longer a circle */
+  width: auto; /* Auto-size width to fit the text */
+  padding: 10px 20px; /* Add some space inside the button */
+  background-color: var(--primary-color);
+  border: 1px solid #eee;
+  border-radius: 12px; /* Rounded corners instead of a circle */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+
+  /* Icon and Text Layout */
+  display: flex;
+  align-items: center;
+  gap: 0.75rem; /* Space between the icon and the text */
+  font-size: 1rem; /* Adjust font size if needed */
+  font-weight: 500;
+  font-family: 'Lexend', sans-serif;
+
+  /* Interaction */
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+/* Hover Effect: A more subtle lift effect */
+.toggle-balls-btn:hover {
+  transform: translateX(-50%) translateY(-3px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.12);
+}
+
+/* --- Animation Toggle Link Styles --- */
+.toggle-animation-link {
+  /* Positioning: Places it in the top-right corner */
+  position: absolute;
+  top: 2rem;
+  right: 2rem;
+  z-index: 1000;
+
+  /* Layout and Appearance */
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: #888; /* A more subtle color */
+  font-size: 0.9rem;
+  font-weight: 500;
+  
+  /* Interaction */
+  cursor: pointer;
+  transition: color 0.2s ease;
+}
+
+.toggle-animation-link:hover {
+  color: var(--font-color); /* Brightens to the main text color on hover */
+}

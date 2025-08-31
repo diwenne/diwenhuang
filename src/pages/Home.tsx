@@ -1,3 +1,4 @@
+import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import ProfilePic from '../assets/me.jpg';
 import { SiGithub, SiLinkedin, SiInstagram } from 'react-icons/si';
@@ -5,23 +6,42 @@ import { FiMail } from 'react-icons/fi';
 import Ballpit from '../components/Ballpit';
 
 function Home() {
+  const [showBalls, setShowBalls] = useState(false);
+
   return (
     <>
-      <div className="bg-canvas">
-        <Ballpit
-          count={60}
-          gravity={0.05}
-          friction={0.9999}
-          wallBounce={1}
-          followCursor={false}
-        />
+      {/* --- MOVED THE TOGGLE HERE --- */}
+      <div
+        className="toggle-animation-link"
+        onClick={() => setShowBalls(!showBalls)}
+        aria-label="Toggle background animation"
+      >
+        {showBalls ? (
+          <>
+            <span>🙏</span>
+            <span>that's enough</span>
+          </>
+        ) : (
+          <>
+            <span>💸</span>
+            <span>make it rain</span>
+          </>
+        )}
       </div>
 
-      {/* The main foreground content */}
-      <main
-        className="home-container"
-        style={{ position: 'relative', zIndex: 1 }}
-      >
+      {showBalls && (
+        <div className="bg-canvas">
+          <Ballpit
+            count={60}
+            gravity={0.05}
+            friction={0.9999}
+            wallBounce={1}
+            followCursor={false}
+          />
+        </div>
+      )}
+
+      <main className="home-container">
         <img src={ProfilePic} alt="Diwen Huang" className="profile-pic" />
         <h1>Diwen Huang</h1>
         <p className="subheader">ib @ port moody secondary</p>
@@ -36,7 +56,6 @@ function Home() {
             projects
           </Link>
         </div>
-
         <div className="social-icons">
           <a
             href="https://github.com/diwenne"
@@ -67,6 +86,8 @@ function Home() {
           </a>
         </div>
       </main>
+
+      {/* The button is no longer here */}
     </>
   );
 }
