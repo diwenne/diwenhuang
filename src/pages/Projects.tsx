@@ -12,8 +12,8 @@ const projectData = [
     subtitle: 'Textbooks teaching coding in the age of AI.',
     link: '/projects/faststart-series',
     date: 'August 2025',
-    description: 'Authored and self-published a series of textbooks designed to modernize the way beginners learn to code. The books, starting with Python and Swift, emphasize a hands-on, project-based approach, teaching fundamental concepts with the assumption that AI tools are available to supplement learning. The series focuses on developing problem-solving skills and preparing new programmers for the modern development landscape.',
-    tags: ['Python', 'Swift', 'Authoring', 'Design', 'Publishing', 'AI in Education']
+    description: 'Authored and self-published a series of textbooks designed to modernize the way beginners learn to code. The books, starting with Python and Swift, emphasize a hands-on, project-based approach, teaching fundamental concepts with the assumption that AI tools are available to supplement learning. The series focuses on developing problem-solving skills and preparing new programmers for the modern development landscape. Swift Faststart achieved Amazon #1 Best Seller status in September 2025 (Mobile App Development & Programming).',
+    tags: ['Python', 'Swift', 'Authoring', 'Design', 'Publishing', 'AI in Education', 'Amazon Best Seller']
   },
   {
     icon: '🌐',

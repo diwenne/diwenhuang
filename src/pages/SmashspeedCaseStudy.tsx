@@ -14,41 +14,44 @@ const SmashspeedCaseStudy = () => {
           </p>
         </header>
 
-        <section className="overview-grid">
-          <div className="overview-item">
-            <h3>Duration</h3>
-            <p>May 2025 - Present </p>
-          </div>
-          <div className="overview-item">
-            <h3>Role</h3>
-            <p>Machine Learning Engineer</p>
-          </div>
-          <div className="overview-item">
-            <h3>Source Code</h3>
-            {/* MODIFIED: Simplified the link structure to prevent wrapping issues. */}
-            <a 
-              href="https://github.com/diwenne/smashspeed_ios" 
-              target="_blank" 
-              rel="noopener noreferrer" 
-              className="source-code-link"
-            >
-              <FaGithub />
-              <span>github.com/diwenne/smashspeed_ios</span>
-            </a>
-          </div>
-          <div className="overview-item full-width">
-            <h3>Responsibilities</h3>
-            <ul>
-              <li>Data Collection & Annotation</li>
-              <li>Model Training & Evaluation</li>
-              <li>Algorithm Implementation</li>
-              <li>Mobile Deployment Optimization</li>
-            </ul>
-          </div>
-           <div className="overview-item full-width">
-            <h3>Tech Stack</h3>
-            {/* MODIFIED: Replaced tags with a simple comma-separated text list. */}
-            <p>Swift (iOS), CoreML, Python, PyTorch, YOLOv5, Kalman Filters</p>
+        <section>
+          <h2>Project Overview</h2>
+          <div className="overview-grid">
+            <div className="overview-item">
+              <h3>Duration</h3>
+              <p>May 2025 - Present </p>
+            </div>
+            <div className="overview-item">
+              <h3>Role</h3>
+              <p>Machine Learning Engineer</p>
+            </div>
+            <div className="overview-item">
+              <h3>Source Code</h3>
+              {/* MODIFIED: Simplified the link structure to prevent wrapping issues. */}
+              <a 
+                href="https://github.com/diwenne/smashspeed_ios" 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                className="source-code-link"
+              >
+                <FaGithub />
+                <span>github.com/diwenne/smashspeed_ios</span>
+              </a>
+            </div>
+            <div className="overview-item full-width">
+              <h3>Responsibilities</h3>
+              <ul>
+                <li>Data Collection & Annotation</li>
+                <li>Model Training & Evaluation</li>
+                <li>Algorithm Implementation</li>
+                <li>Mobile Deployment Optimization</li>
+              </ul>
+            </div>
+            <div className="overview-item full-width">
+              <h3>Tech Stack</h3>
+              {/* MODIFIED: Replaced tags with a simple comma-separated text list. */}
+              <p>Swift (iOS), CoreML, Python, PyTorch, YOLOv5, Kalman Filters</p>
+            </div>
           </div>
         </section>
 

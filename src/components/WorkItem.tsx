@@ -7,9 +7,10 @@ interface WorkItemProps {
   date: string;
   description: string;
   tags: string[];
+  link?: string; // ✅ optional link
 }
 
-function WorkItem({ icon, title, subtitle, date, description, tags }: WorkItemProps) {
+function WorkItem({ icon, title, subtitle, date, description, tags, link }: WorkItemProps) {
   const [isExpanded, setIsExpanded] = useState(false);
 
   // ✅ FIX: Add logic to handle both images and emojis
@@ -44,6 +45,18 @@ function WorkItem({ icon, title, subtitle, date, description, tags }: WorkItemPr
               </span>
             ))}
           </div>
+          {link && (
+            <div className="item-link">
+              <a
+                href={link}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="btn"
+              >
+                View More
+              </a>
+            </div>
+          )}
         </>
       )}
     </div>

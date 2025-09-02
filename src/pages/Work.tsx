@@ -1,11 +1,19 @@
 import WorkItem from '../components/WorkItem';
 import Breadcrumbs from '../components/Breadcrumbs';
 
-
+import enhanced from '../assets/enhanced.png';
 
 const workData = [
   {
-    icon: '🏸',
+    icon: '💻',
+    title: 'Freelance Frontend Developer',
+    subtitle: 'Self-Employed',
+    date: '2024 - Present',
+    description: 'Designing and developing responsive websites for clients, focusing on modern UI/UX practices, performance optimization, and maintainable codebases.',
+    tags: ['React', 'TypeScript', 'TailwindCSS', 'UI/UX', 'Web Development']
+  },
+  {
+    icon: enhanced,
     title: 'Badminton Coach',
     subtitle: 'Enhanced Badminton • NCCP Level 2 Certified',
     date: '2024 - Present',
@@ -13,7 +21,6 @@ const workData = [
     tags: ['Leadership', 'Communication', 'Mentorship', 'Strategy', 'Time Management']
   }
 ];
-
 
 function Work() {
   return (

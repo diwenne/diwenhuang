@@ -15,27 +15,42 @@ const FaststartSeriesCaseStudy = () => {
           </p>
         </header>
 
-        <section className="overview-grid">
-          <div className="overview-item">
-            <h3>Duration</h3>
-            <p>July 2025 - Present</p>
-          </div>
-          <div className="overview-item">
-            <h3>Role</h3>
-            <p>Author, Designer, Publisher</p>
-          </div>
-          <div className="overview-item full-width">
-            <h3>Responsibilities</h3>
-            <ul>
-              <li>Curriculum Development & Writing</li>
-              <li>Cover Design & Interior Layout</li>
-              <li>E-book & Paperback Publishing</li>
-              <li>Marketing & Distribution</li>
-            </ul>
-          </div>
-          <div className="overview-item full-width">
-            <h3>Skills & Technologies</h3>
-            <p>Python, Swift, AI in Education, Technical Writing, KDP</p>
+        {/* --- Achievements (first section) --- */}
+        <section>
+          <h2>Achievements</h2>
+          <ul>
+            <li>
+              <strong>Swift Faststart</strong> — Achieved <strong>Amazon #1 Best Seller</strong>{' '}in{' '}<strong>September 2025</strong> (category: 
+              <em> Mobile App Development &amp; Programming</em>).
+            </li>
+          </ul>
+        </section>
+
+        {/* --- Overview (now with header) --- */}
+        <section>
+          <h2>Project Overview</h2>
+          <div className="overview-grid">
+            <div className="overview-item">
+              <h3>Duration</h3>
+              <p>July 2025 - Present</p>
+            </div>
+            <div className="overview-item">
+              <h3>Role</h3>
+              <p>Author, Designer, Publisher</p>
+            </div>
+            <div className="overview-item full-width">
+              <h3>Responsibilities</h3>
+              <ul>
+                <li>Curriculum Development &amp; Writing</li>
+                <li>Cover Design &amp; Interior Layout</li>
+                <li>E-book &amp; Paperback Publishing</li>
+                <li>Marketing &amp; Distribution</li>
+              </ul>
+            </div>
+            <div className="overview-item full-width">
+              <h3>Skills &amp; Technologies</h3>
+              <p>Python, Swift, AI in Education, Technical Writing, KDP</p>
+            </div>
           </div>
         </section>
 
@@ -65,7 +80,7 @@ const FaststartSeriesCaseStudy = () => {
             Each book in the series is structured around a project-based learning philosophy. Instead of isolated chapters on loops, variables, and functions, readers build tangible projects from the start. This method keeps learners engaged and provides immediate context for the concepts being taught. The curriculum for each book (starting with Python and Swift) was carefully designed to introduce fundamental principles in a logical, cumulative way.
           </p>
 
-          <h3>2. Writing & Content Creation</h3>
+          <h3>2. Writing &amp; Content Creation</h3>
           <p>
             The writing style is intentionally direct, conversational, and accessible. Complex topics are broken down into simple, digestible explanations, supplemented with clear code examples and illustrations. A key differentiator is the integration of "AI Notes"—sidebars and sections that explicitly guide students on when and how to use AI tools for debugging, code explanation, and idea generation.
           </p>
@@ -90,7 +105,7 @@ const FaststartSeriesCaseStudy = () => {
         </section>
 
         <section>
-          <h2>Downloads & Resources</h2>
+          <h2>Downloads &amp; Resources</h2>
           <p>
             Below are links to purchase the books on Amazon.
           </p>

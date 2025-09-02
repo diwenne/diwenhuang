@@ -28,25 +28,28 @@ function CcimCaseStudy() {
         </header>
 
         {/* --- Project Overview --- */}
-        <section className="overview-grid">
-          <div className="overview-item">
-            <h3>Duration</h3>
-            <p>March 2025 (3 weeks)</p>
-          </div>
-          <div className="overview-item">
-            <h3>Role</h3>
-            <p>Product Designer</p>
-          </div>
-          <div className="overview-item full-width">
-            <h3>Responsibilities</h3>
-            <ul>
-              <li>UX Research</li>
-              <li>Information Architecture</li>
-              <li>Visual Design</li>
-              <li>Interaction Design</li>
-              <li>Wireframing</li>
-              <li>Prototyping</li>
-            </ul>
+        <section>
+          <h2>Project Overview</h2>
+          <div className="overview-grid">
+            <div className="overview-item">
+              <h3>Duration</h3>
+              <p>March 2025 (3 weeks)</p>
+            </div>
+            <div className="overview-item">
+              <h3>Role</h3>
+              <p>Product Designer</p>
+            </div>
+            <div className="overview-item full-width">
+              <h3>Responsibilities</h3>
+              <ul>
+                <li>UX Research</li>
+                <li>Information Architecture</li>
+                <li>Visual Design</li>
+                <li>Interaction Design</li>
+                <li>Wireframing</li>
+                <li>Prototyping</li>
+              </ul>
+            </div>
           </div>
         </section>
 
