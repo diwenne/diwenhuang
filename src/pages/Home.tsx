@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
-import ProfilePic from '../assets/me.jpg';
+import ProfilePic from '../assets/headshot.jpg';
 import { SiGithub, SiLinkedin, SiInstagram } from 'react-icons/si';
 import { FiMail } from 'react-icons/fi';
 import Ballpit from '../components/Ballpit';
@@ -46,7 +46,7 @@ function Home() {
         <h1>Diwen Huang</h1>
         <p className="subheader">ib @ port moody secondary</p>
         <p className="description">
-          athlete, full-stack developer and an author now i guess ✨🏸
+          i am an aspiring cs + ai major and hate the pearls in bubble tea 
         </p>
         <div className="nav-buttons">
           <Link to="/work" className="btn">
