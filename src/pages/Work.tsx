@@ -2,10 +2,21 @@ import WorkItem from '../components/WorkItem';
 import Breadcrumbs from '../components/Breadcrumbs';
 
 import enhanced from '../assets/enhanced.png';
+import StemsphereLogo from '../assets/stemsphere.png';
 
 // --- Main Page Data & Component ---
 
 const workData = [
+  {
+    icon: StemsphereLogo,
+    title: 'President',
+    subtitle: 'Stemsphere Foundation',
+    link: 'https://stemsf.org',
+    date: '2025 - Present',
+    description:
+      'Founded a non-profit with the mission to provide STEM education and mentorship for young people. I lead a team of 8 executive directors to develop and execute programs that empower the next generation of innovators and problem-solvers.',
+    tags: ['Founder', 'Leadership', 'Management', 'Non-Profit', 'STEM Education'],
+  },
   {
     icon: '💻',
     title: 'Freelance Software Developer & Designer',

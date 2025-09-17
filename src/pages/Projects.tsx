@@ -1,4 +1,6 @@
 import SmashSpeedLogo from '../assets/smashspeed.png';
+import StemsphereLogo from '../assets/stemsphere.png';
+import ArxivLogo from '../assets/arxiv.png';
 
 import ProjectItem from '../components/ProjectItem';
 import Breadcrumbs from '../components/Breadcrumbs';
@@ -6,6 +8,15 @@ import Breadcrumbs from '../components/Breadcrumbs';
 // --- Main Page Data & Component ---
 
 const projectData = [
+  {
+    icon: ArxivLogo,
+    title: 'Shuttlecock Trajectory & Speed Estimation',
+    subtitle: 'Published original research in computer vision and multimedia.',
+    link: 'https://www.arxiv.org/abs/2509.05334',
+    date: 'September 2025',
+    description: 'Authored and published original research detailing a novel pipeline for accurately tracking badminton shuttlecock trajectories. This work, which forms the scientific foundation for the Smashspeed app, was conducted under the guidance of mentors including a University of Pennsylvania M.Eng and a Stanford PhD grad. The paper contributes to the fields of multimedia and computer vision by introducing a robust methodology for object detection and state estimation of small, high-velocity objects.',
+    tags: ['Original Research', 'arXiv', 'Computer Vision', 'Multimedia', 'Deep Learning', 'PyTorch', 'Academic Publishing']
+  },
   {
     icon: '📖',
     title: 'Programming Faststart Series',
@@ -26,21 +37,12 @@ const projectData = [
   },
   {
     icon: SmashSpeedLogo,
-    title: 'Smashspeed iOS',
-    subtitle: 'User-friendly app to calculate badminton smash speed.',
-    link: 'https://smashspeed.ca',
+    title: 'Smashspeed',
+    subtitle: 'Viral iOS app & ML engine to calculate badminton smash speed.',
+    link: '/projects/smashspeed-engine', // MODIFIED: Link now points to the case study
     date: 'July 2025',
-    description: 'Developed and launched a native iOS application that provides badminton players with a powerful tool to measure their smash speed. Built with SwiftUI for a clean and responsive interface, the app leverages a custom CoreML model for on-device analysis. Users can import videos of their smashes, and the app automatically processes the footage to provide an accurate speed reading. Trusted by amateur and national-level players alike, Smashspeed serves as a valuable training aid for athletes looking to track their performance and improvement.',
-    tags: ['SwiftUI', 'CoreML', 'iOS', 'Product Development']
-  },
-  {
-    icon: SmashSpeedLogo,
-    title: 'Smashspeed (ML Engine)',
-    subtitle: 'Custom ML model to detect shuttlecocks and calculate speed.',
-    link: '/projects/smashspeed-engine',
-    date: 'June 2025',
-    description: 'Engineered the core machine learning pipeline for the Smashspeed app, beginning with the collection and annotation of a custom dataset of over 3,000 shuttlecock images. I trained a lightweight YOLOv5 model for real-time object detection and implemented a Kalman Filter to accurately track the shuttlecock\'s trajectory, even with high-speed motion blur. This robust tracking logic allows for precise speed calculation based on the object\'s displacement between frames, forming the powerful yet efficient engine that drives the iOS application.',
-    tags: ['Python', 'PyTorch', 'YOLOv5', 'Kalman Filters', 'Machine Learning']
+    description: 'As the Founder and Lead Developer of a 6-person team, I developed and launched Smashspeed, an iOS app that has been downloaded by over 10,000 users, achieved a peak ranking of #2 in the App Store (Sports), and gained over 1 million views online through viral content. The app allows badminton players to measure their smash speed by simply importing a video. The front-end was built natively with SwiftUI, and its core is a custom machine learning pipeline I engineered based on my published research.',
+    tags: ['Founder', 'Leadership', 'SwiftUI', 'CoreML', 'iOS', 'Product Development', 'Python', 'PyTorch', 'YOLOv5', 'Kalman Filters', 'Machine Learning']
   },
   {
     icon: '🏛️',

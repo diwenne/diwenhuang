@@ -1,5 +1,5 @@
 import Breadcrumbs from '../components/Breadcrumbs';
-import { FaGithub } from 'react-icons/fa';
+import { FaGithub, FaGlobe } from 'react-icons/fa'; // MODIFIED: Added FaGlobe icon
 
 const SmashspeedCaseStudy = () => {
   return (
@@ -25,9 +25,21 @@ const SmashspeedCaseStudy = () => {
               <h3>Role</h3>
               <p>Machine Learning Engineer</p>
             </div>
+            {/* ADDED: Link to the live application website */}
+            <div className="overview-item">
+              <h3>Live App</h3>
+              <a 
+                href="https://smashspeed.ca" 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                className="source-code-link"
+              >
+                <FaGlobe />
+                <span>smashspeed.ca</span>
+              </a>
+            </div>
             <div className="overview-item">
               <h3>Source Code</h3>
-              {/* MODIFIED: Simplified the link structure to prevent wrapping issues. */}
               <a 
                 href="https://github.com/diwenne/smashspeed_ios" 
                 target="_blank" 
@@ -49,12 +61,13 @@ const SmashspeedCaseStudy = () => {
             </div>
             <div className="overview-item full-width">
               <h3>Tech Stack</h3>
-              {/* MODIFIED: Replaced tags with a simple comma-separated text list. */}
               <p>Swift (iOS), CoreML, Python, PyTorch, YOLOv5, Kalman Filters</p>
             </div>
           </div>
         </section>
 
+        {/* --- Rest of the file remains the same --- */}
+        
         <section>
         <h2>Project Vision</h2>
         <p>
