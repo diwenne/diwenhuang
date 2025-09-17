@@ -13,7 +13,7 @@ const projectData = [
     subtitle: 'Published original research in computer vision and multimedia.',
     link: 'https://www.arxiv.org/abs/2509.05334',
     date: 'September 2025',
-    description: 'Authored and published original research detailing a novel pipeline for accurately tracking badminton shuttlecock trajectories. This work, which forms the scientific foundation for the Smashspeed app, was conducted under the guidance of mentors including a University of Pennsylvania M.Eng and a Stanford PhD grad. The paper contributes to the fields of multimedia and computer vision by introducing a robust methodology for object detection and state estimation of small, high-velocity objects.',
+    description: 'Authored and published original research detailing a novel pipeline for accurately tracking badminton shuttlecock trajectories. This work, which forms the scientific foundation for the Smashspeed app, was conducted under the guidance of mentors including a University of Pennsylvania M.Eng and a Stanford PhD. The paper contributes to the fields of multimedia (cs.MM) and computer vision (cs.CV) by introducing a robust methodology for object detection and state estimation of small, high-velocity objects.',
     tags: ['Original Research', 'arXiv', 'Computer Vision', 'Multimedia', 'Deep Learning', 'PyTorch', 'Academic Publishing']
   },
   {
