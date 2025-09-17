@@ -4,6 +4,7 @@ import ProfilePic from '../assets/headshot.jpg';
 import { SiGithub, SiLinkedin, SiInstagram } from 'react-icons/si';
 import { FiMail } from 'react-icons/fi';
 import Ballpit from '../components/Ballpit';
+import ResumePDF from '../assets/resume.pdf'; 
 
 function Home() {
   const [showBalls, setShowBalls] = useState(false);
@@ -55,6 +56,14 @@ function Home() {
           <Link to="/projects" className="btn">
             projects
           </Link>
+          <a
+            href={ResumePDF}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="btn"
+          >
+            resume
+          </a>
         </div>
         <div className="social-icons">
           <a
