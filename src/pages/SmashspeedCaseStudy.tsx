@@ -122,7 +122,7 @@ const SmashspeedCaseStudy = () => {
             For the detection task, I selected the <strong>YOLOv5</strong> (You Only Look Once) architecture developed by Ultralytics, opting for the <strong>YOLOv5s</strong> variant. This small but powerful model offered the ideal balance between inference speed and detection accuracy, making it perfect for real-time execution on mobile devices. I specifically chose YOLOv5s because it is well-suited to achieving high performance even with a relatively limited dataset—a crucial factor given the niche nature of shuttlecock detection and the absence of large-scale public datasets.
           </p>
           <p>
-            Trained in PyTorch on my custom dataset, YOLOv5s consistently delivered high precision in localizing the shuttlecock’s bounding box across frames, even under challenging conditions such as motion blur, varied lighting, and unconventional camera angles.
+            To train the model, I leveraged <strong>Google Cloud Platform (GCP)</strong>, utilizing a high-performance compute instance equipped with <strong>NVIDIA A100 GPUs</strong> and the <strong>CUDA</strong> toolkit for accelerated processing. Trained in PyTorch on my custom dataset, this setup enabled rapid experimentation and tuning, allowing YOLOv5s to consistently deliver high precision in localizing the shuttlecock’s bounding box across frames, even under challenging conditions like motion blur and varied lighting.
           </p>
 
 
