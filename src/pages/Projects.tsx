@@ -1,5 +1,4 @@
 import SmashSpeedLogo from '../assets/smashspeed.png';
-import StemsphereLogo from '../assets/stemsphere.png';
 import ArxivLogo from '../assets/arxiv.png';
 
 import ProjectItem from '../components/ProjectItem';
