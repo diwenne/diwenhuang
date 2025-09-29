@@ -47,7 +47,7 @@ function Home() {
         <h1>Diwen Huang</h1>
         <p className="subheader">ib @ port moody secondary</p>
         <p className="description">
-          i am an aspiring cs + ai major and hate the pearls in bubble tea 
+          i am an aspiring cs + ai major based in vancouver
         </p>
         <div className="nav-buttons">
           <Link to="/work" className="btn">
