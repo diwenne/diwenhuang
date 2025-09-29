@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import ProfilePic from '../assets/headshot.jpg';
-import { SiGithub, SiLinkedin, SiInstagram } from 'react-icons/si';
+import { SiGithub, SiLinkedin, SiInstagram, SiX } from 'react-icons/si';
 import { FiMail } from 'react-icons/fi';
 import Ballpit from '../components/Ballpit';
 import ResumePDF from '../assets/resume.pdf'; 
@@ -89,6 +89,14 @@ function Home() {
             aria-label="Instagram"
           >
             <SiInstagram />
+          </a>
+          <a
+            href="https://x.com/diwennee"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="X"
+          >
+            <SiX />
           </a>
           <a href="mailto:diwenh5@icloud.com" aria-label="Email">
             <FiMail />
