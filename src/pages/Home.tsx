@@ -98,7 +98,7 @@ function Home() {
           >
             <SiX />
           </a>
-          <a href="mailto:diwenh5@icloud.com" aria-label="Email">
+          <a href="mailto:diwennee@gmail.com" aria-label="Email">
             <FiMail />
           </a>
         </div>
