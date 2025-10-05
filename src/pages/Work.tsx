@@ -3,10 +3,21 @@ import Breadcrumbs from '../components/Breadcrumbs';
 
 import enhanced from '../assets/enhanced.png';
 import StemsphereLogo from '../assets/stemsphere.png';
+import SolaceLogo from '../assets/solace.png';
 
 // --- Main Page Data & Component ---
 
 const workData = [
+  {
+    icon: SolaceLogo,
+    title: 'Product Manager & Software Developer',
+    subtitle: 'Solace • UC Berkeley Web3 Startup',
+    link: 'https://solacelaunch.com',
+    date: '2025 - Present',
+    description:
+      'Building an AI wellness agent for a Web3 startup based at UC Berkeley, backed by Virtuals Protocol. Leading product development and engineering iOS and Android applications using React Native and TypeScript.',
+    tags: ['Product Management', 'React Native', 'TypeScript', 'iOS', 'Android', 'Web3', 'AI', 'Mobile Development'],
+  },
   {
     icon: StemsphereLogo,
     title: 'President',
@@ -16,16 +27,6 @@ const workData = [
     description:
       'Founded a non-profit with the mission to provide STEM education and mentorship for young people. I lead a team of 8 executive directors to develop and execute programs that empower the next generation of innovators and problem-solvers.',
     tags: ['Founder', 'Leadership', 'Management', 'Non-Profit', 'STEM Education'],
-  },
-  {
-    icon: '💻',
-    title: 'Freelance Software Developer & Designer',
-    subtitle: 'Self-Employed',
-    link: 'https://diwen.dev',
-    date: '2025 - Present',
-    description:
-      'Designing and developing responsive websites for clients, focusing on modern UI/UX practices, performance optimization, and maintainable codebases.',
-    tags: ['React', 'TypeScript', 'TailwindCSS', 'UI/UX', 'Web Development'],
   },
   {
     icon: enhanced,

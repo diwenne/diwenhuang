@@ -9,12 +9,21 @@ import Breadcrumbs from '../components/Breadcrumbs';
 
 const projectData = [
   {
+    icon: '👁️',
+    title: 'Real-time Gaze Tracking System',
+    subtitle: 'Pilot project for Cluely — Privacy-first webcam gaze estimation',
+    link: '#', // Update with actual link when available
+    date: 'October 2025',
+    description: 'Built a lightweight, local-only gaze tracking prototype using standard webcam to infer eye/pupil position and head pose. The system classifies gaze direction (left/right/up/down/center) and emits continuous gaze vectors at 15–30 FPS. Features include swappable face/landmark detection, optional five-point calibration, temporal smoothing with confidence scores, and dual outputs: debug overlay with face/eye ROI visualization and programmatic stream (NDJSON console + optional WebSocket). Privacy-first architecture with no frame storage or network transmission, CPU-only performance with less than 100ms latency, and simple integration for immediate live gaze event streaming.',
+    tags: ['Computer Vision', 'Gaze Tracking', 'Head Pose Estimation', 'Python', 'WebSocket', 'Privacy-First', 'Real-time Processing', 'Facial Landmarks']
+  },
+  {
     icon: steve,
     title: 'Steve the Freakysaur',
     subtitle: 'Daydream Game Jam 2025 — 1st Place Winner',
     link: 'https://haocuii.itch.io/steve-the-freakysaur',
     date: 'September 2025',
-    description: 'Co-created “Steve the Freakysaur,” a Chrome Dino–style game controlled entirely hands-free using tongue detection through real-time facial landmark segmentation. Built during BC’s biggest youth hackathon (Daydream Game Jam), which was also the largest Daydream event in North America, the project won 1st place out of 124 participants and 50+ projects. The game features single-player, two-player, and Flappy Bird–style modes, and was prototyped in Pygame before being ported to Next.js with TypeScript for web play.',
+    description: 'Co-created "Steve the Freakysaur," a Chrome Dino–style game controlled entirely hands-free using tongue detection through real-time facial landmark segmentation. Built during BC\'s biggest youth hackathon (Daydream Game Jam), which was also the largest Daydream event in North America, the project won 1st place out of 124 participants and 50+ projects. The game features single-player, two-player, and Flappy Bird–style modes, and was prototyped in Pygame before being ported to Next.js with TypeScript for web play.',
     tags: ['Next.js', 'TypeScript', 'Tailwind CSS', 'Pygame', 'Computer Vision', 'Hackathon', 'Game Development', 'Segmentation Model']
   },
   {
