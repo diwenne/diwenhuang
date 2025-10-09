@@ -24,7 +24,7 @@ const projectData = [
     link: 'https://haocuii.itch.io/steve-the-freakysaur',
     date: 'September 2025',
     description: 'Co-created "Steve the Freakysaur," a Chrome Dino–style game controlled entirely hands-free using tongue detection through real-time facial landmark segmentation. Built during BC\'s biggest youth hackathon (Daydream Game Jam), which was also the largest Daydream event in North America, the project won 1st place out of 124 participants and 50+ projects. The game features single-player, two-player, and Flappy Bird–style modes, and was prototyped in Pygame before being ported to Next.js with TypeScript for web play.',
-    tags: ['Next.js', 'TypeScript', 'Tailwind CSS', 'Pygame', 'Computer Vision', 'Hackathon', 'Game Development', 'Segmentation Model']
+    tags: ['Next.js', 'TypeScript', 'Tailwind CSS', 'Pygame', 'Computer Vision', 'Hackathon', 'Game Development', 'Segmentation Model', '180k+ LinkedIn Impressions']
   },
   {
     icon: ArxivLogo,
