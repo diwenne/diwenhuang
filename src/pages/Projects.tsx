@@ -59,7 +59,7 @@ const projectData = [
     subtitle: 'Viral iOS app & ML engine to calculate badminton smash speed.',
     link: '/projects/smashspeed-engine', // MODIFIED: Link now points to the case study
     date: 'July 2025',
-    description: 'As the Founder and Lead Developer of a 6-person team, I developed and launched Smashspeed, an iOS app that has been downloaded by over 10,000 users, achieved a peak ranking of #2 in the App Store (Sports), and gained over 1 million views online through viral content. The app allows badminton players to measure their smash speed by simply importing a video. The front-end was built natively with SwiftUI, and its core is a custom machine learning pipeline I engineered based on my published research.',
+    description: 'As the Founder and Lead Developer of a 6-person team, I developed and launched Smashspeed, an iOS/Android app that has over 35,000 users, achieved a peak ranking of #1 in the App Store (Sports), and gained ~5 million views online through viral content. The app allows badminton players to measure their smash speed by simply importing a video. The front-end was built natively with SwiftUI, and its core is a custom machine learning pipeline I engineered based on my published research.',
     tags: ['Founder', 'Leadership', 'SwiftUI', 'CoreML', 'iOS', 'Product Development', 'Python', 'PyTorch', 'YOLOv5', 'Kalman Filters', 'Machine Learning']
   },
   {
