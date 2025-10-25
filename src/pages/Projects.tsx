@@ -46,12 +46,12 @@ const projectData = [
   },
   {
     icon: '🌐',
-    title: 'Personal Website',
-    subtitle: 'My personal portfolio built with React and TypeScript.',
-    link: 'https://diwenhuang.ca',
+    title: 'Web Design',
+    subtitle: 'Portfolio of commissioned client websites.',
+    link: 'https://diwen.dev',
     date: 'August 2025',
-    description: 'The website you\'re currently on! I developed this portfolio from scratch with a focus on a simple, aesthetic, and intuitive user experience. It was built using React with Vite for a fast and modern development experience, TypeScript for type safety, and plain CSS for precise control over the design and animations.',
-    tags: ['React', 'TypeScript', 'CSS', 'Vite']
+    description: 'I get commissioned by clients to design and develop modern, responsive, and SEO-optimized websites. Each project emphasizes fast shipping, clean UX design principles, and cutting-edge web technologies including TypeScript, Next.js, Vite, Tailwind CSS, and custom CSS. My work focuses on delivering high-performance websites that look great on all devices and rank well in search engines.',
+    tags: ['Next.js', 'TypeScript', 'Tailwind CSS', 'CSS', 'Vite', 'UX Design', 'SEO', 'Responsive Design']
   },
   {
     icon: SmashSpeedLogo,
