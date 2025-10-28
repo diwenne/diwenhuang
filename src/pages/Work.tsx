@@ -10,7 +10,7 @@ import SolaceLogo from '../assets/solace.png';
 const workData = [
   {
     icon: SolaceLogo,
-    title: 'Product Manager & Software Developer',
+    title: 'Founding Engineer',
     subtitle: 'Solace • UC Berkeley Web3 Startup',
     link: 'https://solacelaunch.com',
     date: '2025 - Present',

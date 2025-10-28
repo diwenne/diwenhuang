@@ -1,6 +1,7 @@
 import SmashSpeedLogo from '../assets/smashspeed.png';
 import ArxivLogo from '../assets/arxiv.png';
 import steve from '../assets/steve.png';
+import CluelyLogo from '../assets/cluely.jpg';
 
 import ProjectItem from '../components/ProjectItem';
 import Breadcrumbs from '../components/Breadcrumbs';
@@ -9,7 +10,7 @@ import Breadcrumbs from '../components/Breadcrumbs';
 
 const projectData = [
   {
-    icon: '👁️',
+    icon: CluelyLogo,
     title: 'Real-time Gaze Tracking System',
     subtitle: 'Pilot project for Cluely — Privacy-first webcam gaze estimation',
     link: '#', // Update with actual link when available
@@ -62,24 +63,24 @@ const projectData = [
     description: 'As the Founder and Lead Developer of a 6-person team, I developed and launched Smashspeed, an iOS/Android app that has over 35,000 users, achieved a peak ranking of #1 in the App Store (Sports), and gained ~5 million views online through viral content. The app allows badminton players to measure their smash speed by simply importing a video. The front-end was built natively with SwiftUI, and its core is a custom machine learning pipeline I engineered based on my published research.',
     tags: ['Founder', 'Leadership', 'SwiftUI', 'CoreML', 'iOS', 'Product Development', 'Python', 'PyTorch', 'YOLOv5', 'Kalman Filters', 'Machine Learning']
   },
-  {
-    icon: '🏛️',
-    title: 'Chinese Canadian Immigration Museum',
-    subtitle: 'Designing a website for a virtual museum using UX frameworks.',
-    link: '/projects/ccim',
-    date: 'March 2025',
-    description: 'A case study in UX design for a virtual museum, focusing on user-centered design principles, information architecture, and prototyping.',
-    tags: ['UX Design', 'Figma', 'Product Design', 'Prototyping']
-  },
-  {
-    icon: '🍲',
-    title: 'Regen',
-    subtitle: 'AI-powered website that generates recipes from food photos.',
-    link: 'https://github.com/seanhuangcode/ReGen',
-    date: 'Jan 2025',
-    description: 'A website that takes in photos of food items and uses the Gemini API to generate a custom-tailored recipe. It won 2nd place in a Vancouver hackathon.',
-    tags: ['HTML', 'CSS', 'Gemini API']
-  },
+  // {
+  //   icon: '🏛️',
+  //   title: 'Chinese Canadian Immigration Museum',
+  //   subtitle: 'Designing a website for a virtual museum using UX frameworks.',
+  //   link: '/projects/ccim',
+  //   date: 'March 2025',
+  //   description: 'A case study in UX design for a virtual museum, focusing on user-centered design principles, information architecture, and prototyping.',
+  //   tags: ['UX Design', 'Figma', 'Product Design', 'Prototyping']
+  // },
+  // {
+  //   icon: '🍲',
+  //   title: 'Regen',
+  //   subtitle: 'AI-powered website that generates recipes from food photos.',
+  //   link: 'https://github.com/seanhuangcode/ReGen',
+  //   date: 'Jan 2025',
+  //   description: 'A website that takes in photos of food items and uses the Gemini API to generate a custom-tailored recipe. It won 2nd place in a Vancouver hackathon.',
+  //   tags: ['HTML', 'CSS', 'Gemini API']
+  // },
   
 ];
 
