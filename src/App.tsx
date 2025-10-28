@@ -6,6 +6,7 @@ import CcimCaseStudy from './pages/CcimCaseStudy';
 import SmashSpeedCaseStudy from './pages/SmashspeedCaseStudy';
 import FaststartSeriesCaseStudy from './pages/FaststartSeriesCaseStudy.tsx'; // Import the new case study
 import { Analytics } from '@vercel/analytics/react';
+import TimeWidget from './components/TimeWidget';
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
         <Route path="/projects/faststart-series" element={<FaststartSeriesCaseStudy />} />
       </Routes>
       <Analytics />
+      <TimeWidget />
     </>
   );
 }

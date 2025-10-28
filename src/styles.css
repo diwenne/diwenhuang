@@ -554,3 +554,45 @@ body {
 .toggle-animation-link:hover {
   color: var(--font-color); /* Brightens to the main text color on hover */
 }
+
+/* --- Time Widget Styles --- */
+.time-widget {
+  /* Positioning: Fixed in bottom-left corner */
+  position: fixed;
+  bottom: 1.5rem;
+  left: 1.5rem;
+  z-index: 1000;
+
+  /* Layout */
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+
+  /* Appearance */
+  color: #888;
+  font-size: 0.75rem;
+  font-weight: 400;
+  line-height: 1.4;
+
+  /* Make it slightly transparent and subtle */
+  opacity: 0.8;
+  transition: opacity 0.2s ease;
+}
+
+.time-widget:hover {
+  opacity: 1;
+}
+
+.time-widget-row {
+  display: flex;
+  gap: 0.4rem;
+  align-items: baseline;
+}
+
+.time-widget-label {
+  font-weight: 500;
+}
+
+.time-widget-value {
+  font-variant-numeric: tabular-nums; /* Makes numbers monospaced for better alignment */
+}
